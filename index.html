@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ Trình Chinh Phục Tiếng Phần Lan B1</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0065F2',
+                        'secondary': '#7DBCF5',
+                        'background': '#F8FAFC',
+                        'card': '#FFFFFF',
+                        'text-primary': '#1E293B',
+                        'text-secondary': '#475569',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-text-primary antialiased">
+
+    <div id="app" class="flex flex-col min-h-screen">
+        <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
+            <nav class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="#/" class="flex items-center space-x-2 text-xl font-bold text-primary">
+                        <i data-lucide="feather"></i>
+                        <span>Finnish Roadmap B1</span>
+                    </a>
+                    <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                        <a href="#/" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Trang Chủ</a>
+                        <a href="#/roadmap" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Lộ Trình</a>
+                        <a href="#/skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Kỹ Năng</a>
+                        <a href="#/resources" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Tài Nguyên</a>
+                        <a href="#/yki-test" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Thi YKI</a>
+                        <a href="#/comparison" class="nav-link px-3 py-2 rounded-md text-sm font-medium">So Sánh</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="hidden md:hidden mt-4">
+                    <a href="#/" class="block nav-link px-3 py-2 rounded-md text-base font-medium">Trang Chủ</a>
+                    <a href="#/roadmap" class="block nav-link px-3 py-2 rounded-md text-base font-medium">Lộ Trình Chi Tiết</a>
+                    <a href="#/skills" class="block nav-link px-3 py-2 rounded-md text-base font-medium">Phát Triển Kỹ Năng</a>
+                    <a href="#/resources" class="block nav-link px-3 py-2 rounded-md text-base font-medium">Tài Nguyên</a>
+                    <a href="#/yki-test" class="block nav-link px-3 py-2 rounded-md text-base font-medium">Luyện Thi YKI</a>
+                    <a href="#/comparison" class="block nav-link px-3 py-2 rounded-md text-base font-medium">So Sánh Ngôn Ngữ</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="app-root" class="container mx-auto px-6 py-8 flex-grow">
+            <!-- Content will be injected here by the router -->
+        </main>
+
+        <footer class="bg-gray-800 text-white mt-12">
+            <div class="container mx-auto px-6 py-6 text-center text-sm">
+                <p>&copy; 2025 Finnish Roadmap B1. Được tạo ra để truyền cảm hứng học tập.</p>
+                <p class="text-gray-400 mt-1">Thiết kế bởi Neo</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://esm.run/framer-motion@11.2.11"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
